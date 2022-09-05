@@ -10,7 +10,7 @@ const gallery = document.querySelector('.gallery');
 const API_KEY = '29669781-317417cb25e4625a08da5b15a';
 const perPage = 40;
 let page = 1;
-const lightbox = $('.gallery a').simpleLightbox;
+const lightbox = new simpleLightbox('.gallery a');
 
 const fetchPhotos = async (search, pagenr) => {
   const response = await fetch(
